@@ -34,7 +34,7 @@ const destinations: Destination[] = [
     title: "البتراء",
     subtitle: "مدينة الأنباط الوردية",
     category: "heritage",
-    image: "/manus-storage/petra_b4c9bc77.jpg",
+    image: "/atyaf-jordan/assets/petra.jpg",
     color: "#bc6948",
     number: "01",
     description: "ممرات منحوتة في قلب الجبل، حيث يبدأ كل منعطف بحكاية أقدم من الذاكرة.",
@@ -43,7 +43,7 @@ const destinations: Destination[] = [
     title: "وادي رم",
     subtitle: "وادي القمر",
     category: "nature",
-    image: "/manus-storage/wadi-rum_658c7df0.jpg",
+    image: "/atyaf-jordan/assets/wadi-rum.jpg",
     color: "#b87947",
     number: "02",
     description: "امتداد من الرمال الحمراء والسماء الواسعة؛ تجربة تشبه السير داخل لوحة سينمائية.",
@@ -52,7 +52,7 @@ const destinations: Destination[] = [
     title: "البحر الميت",
     subtitle: "ماء يلامس السماء",
     category: "sea",
-    image: "/manus-storage/dead-sea_8b8cf8eb.jpg",
+    image: "/atyaf-jordan/assets/dead-sea.jpg",
     color: "#568c91",
     number: "03",
     description: "هدوء أزرق عميق وتجربة استرخاء طبيعية عند أخفض نقطة على وجه الأرض.",
@@ -61,7 +61,7 @@ const destinations: Destination[] = [
     title: "ليالي الأردن",
     subtitle: "نوم تحت النجوم",
     category: "nature",
-    image: "/manus-storage/experience_aebcba59.jpg",
+    image: "/atyaf-jordan/assets/experience.jpg",
     color: "#806c9a",
     number: "04",
     description: "خيمة دافئة، قهوة على الرمل، وسماء لا تشبه أي سماء رأيتها من قبل.",
@@ -120,7 +120,7 @@ export default function Home() {
     <main className="overflow-hidden bg-[#f5efe6] text-[#1b1713]">
       <section className="grain relative min-h-[720px] overflow-hidden bg-[#1b1713] text-[#fffaf3] lg:min-h-[860px]" id="top">
         <div className="absolute inset-0">
-          <img src="/manus-storage/wadi-rum_658c7df0.jpg" alt="صحراء وادي رم في الأردن" className="h-full w-full object-cover object-center opacity-55" />
+          <img src="/atyaf-jordan/assets/wadi-rum.jpg" alt="صحراء وادي رم في الأردن" className="h-full w-full object-cover object-center opacity-55" />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(19,15,12,.82)_0%,rgba(27,23,19,.18)_35%,rgba(27,23,19,.88)_100%)]" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_32%,rgba(200,139,75,.25),transparent_28%),radial-gradient(circle_at_85%_5%,rgba(255,244,216,.12),transparent_21%)]" />
         </div>
@@ -194,7 +194,7 @@ export default function Home() {
           <motion.div initial="hidden" whileInView="show" viewport={{ once: true, amount: .3 }} variants={fadeUp} className="relative">
             <div className="absolute -right-5 -top-8 hidden h-32 w-32 rounded-full border border-[#c88b4b]/40 sm:block" />
             <div className="relative aspect-[4/5] max-w-[450px] overflow-hidden rounded-[40px] rounded-tl-[120px] bg-[#d4c0a5] shadow-[18px_22px_0_#e4d4be]">
-              <img src="/manus-storage/petra_b4c9bc77.jpg" alt="ممرات البتراء الوردية" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+              <img src="/atyaf-jordan/assets/petra.jpg" alt="ممرات البتراء الوردية" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1b1713]/65 via-transparent to-transparent" />
               <div className="absolute bottom-7 right-7 text-white"><span className="mb-2 block text-[10px] tracking-[.25em] text-[#e8c595]">ARCHIVE / 01</span><span className="font-display text-lg">الممر الوردي</span></div>
             </div>
@@ -244,7 +244,7 @@ export default function Home() {
         <div className="absolute -right-24 bottom-0 h-96 w-96 rounded-full bg-[#c88b4b]/10 blur-3xl" />
         <div className="relative z-10 mx-auto grid max-w-[1320px] gap-12 px-5 sm:px-8 lg:grid-cols-[1.1fr_.9fr] lg:items-center lg:gap-24 lg:px-12">
           <motion.div initial="hidden" whileInView="show" viewport={{ once: true, amount: .25 }} variants={fadeUp}><div className="mb-6 flex items-center gap-3 text-[11px] tracking-[.2em] text-[#e8c595]"><span className="h-px w-9 bg-[#e8c595]" /> مذكرة من الطريق</div><h2 className="font-display text-[clamp(2.3rem,5vw,5.3rem)] font-semibold leading-[1.35] tracking-[-.09em]">السفر ليس<br /><span className="text-[#e8c595]">قائمة إنجاز.</span></h2><p className="mt-7 max-w-[500px] text-[15px] leading-8 text-white/55">اترك مساحة للمفاجأة. خذ الطريق الطويل. اسأل عن الاسم القديم للمكان. الأردن يكافئ من يصل بقلب مفتوح.</p><button onClick={() => showNotice("تم حفظ المذكرة — ستصلك حكايات أطياف قريبًا")} className="mt-8 flex items-center gap-3 rounded-full bg-[#e8c595] px-6 py-3 text-[12px] font-semibold text-[#1b1713] transition-all hover:-translate-y-1 hover:bg-[#f1d6aa]"><Heart className="h-4 w-4" /> احفظ هذه المذكرة</button></motion.div>
-          <motion.div initial={{ opacity: 0, scale: .96 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: .25 }} transition={{ duration: .8 }} className="relative aspect-[4/3] overflow-hidden rounded-[36px] border border-white/15"><img src="/manus-storage/experience_aebcba59.jpg" alt="تجربة ليلية في الصحراء الأردنية" className="h-full w-full object-cover opacity-75 transition duration-700 hover:scale-105" /><div className="absolute inset-0 bg-gradient-to-tr from-[#1b1713]/80 via-transparent to-[#1b1713]/10" /><div className="absolute bottom-6 right-6"><span className="mb-2 block text-[10px] tracking-[.22em] text-[#e8c595]">FIELD NOTE / 07</span><span className="font-display text-lg">حين تصبح السماء أقرب</span></div><div className="pulse-ring absolute left-6 top-6 grid h-12 w-12 place-items-center rounded-full border border-white/30 bg-white/10 backdrop-blur"><Sparkles className="h-4 w-4 text-[#e8c595]" /></div></motion.div>
+          <motion.div initial={{ opacity: 0, scale: .96 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: .25 }} transition={{ duration: .8 }} className="relative aspect-[4/3] overflow-hidden rounded-[36px] border border-white/15"><img src="/atyaf-jordan/assets/experience.jpg" alt="تجربة ليلية في الصحراء الأردنية" className="h-full w-full object-cover opacity-75 transition duration-700 hover:scale-105" /><div className="absolute inset-0 bg-gradient-to-tr from-[#1b1713]/80 via-transparent to-[#1b1713]/10" /><div className="absolute bottom-6 right-6"><span className="mb-2 block text-[10px] tracking-[.22em] text-[#e8c595]">FIELD NOTE / 07</span><span className="font-display text-lg">حين تصبح السماء أقرب</span></div><div className="pulse-ring absolute left-6 top-6 grid h-12 w-12 place-items-center rounded-full border border-white/30 bg-white/10 backdrop-blur"><Sparkles className="h-4 w-4 text-[#e8c595]" /></div></motion.div>
         </div>
       </section>
 
